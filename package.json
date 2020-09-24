@@ -1,0 +1,20 @@
+{
+  "name": "stale-branch-management",
+  "version": "1.0.0",
+  "description": "List stale branches for repos, optionally delete",
+  "main": "stale-branch-management.js",
+  "scripts": {
+    "start": "node stale-branch-management.js"
+  },
+  "author": "Thomas Hughes <iamhughes@github.com>",
+  "dependencies": {
+    "dotenv": "*",
+    "yargs": "*",
+    "fs": "*",
+    "csv-parser": "^2.3.2",
+    "@octokit/rest": "^18.0.1",
+    "@octokit/graphql": "*",
+    "@octokit/plugin-retry": "*",
+    "@octokit/plugin-throttling": "*"
+  }
+}
