@@ -258,7 +258,7 @@ function deleteStaleBranches () {
 function isBranchStale (lastUpdated) {
   const staleDays = process.env.STALE_DAYS
   const dateUpdated = new Date(lastUpdated).getTime()
-  // Covnert staleDays to milliseconds
+  // Convert staleDays to milliseconds
   const staleDate = (Date.now() - (staleDays * 24 * 60 * 60 * 1000))
   return (dateUpdated < staleDate)
 }
